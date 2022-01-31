@@ -8,8 +8,8 @@ export default class HighlighterExample extends Component {
     super(props)
 
     this.state = {
-      searchText: 'and or the',
-      textToHighlight: `When in the Course of human events it becomes necessary for one people to dissolve the political bands which have connected them with another and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.`,
+      searchText: 'separation.',
+      textToHighlight: `A etapa fechada foi iniciada para o item 71. Fornecedor que apresentou lance entre R$ 19,9800 e R$ 21,5000 poderá enviar um lance único e fechado até às 14:13:35 do dia, teste push registro contratação encontrada data, teste push Wavecodetéste 83.869.954/0001-62, A etapa fechada foi iniciada para o item 71. Fornecedor que apresentou lance entre R$ 19,9800 e R$ 21,5000 poderá enviar um lance único e fechado até às 14:13:35 do dia 31/01/2022.`,
       activeIndex: -1,
       caseSensitive: false
     }
@@ -17,7 +17,36 @@ export default class HighlighterExample extends Component {
   render () {
     const { ...props } = this.props
     const { activeIndex, caseSensitive, searchText, textToHighlight } = this.state
-    const searchWords = searchText.split(/\s/).filter(word => word)
+    const searchWords = [
+      "54.545.454/5454-54",
+      "54545454545454",
+      "65.019.044/0001-09",
+      "65019044000109",
+      "83.083.611/0001-78",
+      "83.869.954/0001-62",
+      "83083611000178",
+      "83869954000162",
+      "Wavecodeteste",
+      "Wavecodeteste ME10",
+      "Wavecodeteste ME11",
+      "Wavecodeteste ME20",
+      "Wavecodeteste ME4",
+      "Wavecodetéste",
+      "Wavecodetéste ME20",
+      "ata",
+      "classificado",
+      "data",
+      "documentação",
+      "enviar",
+      "errado",
+      "exo",
+      "prego",
+      "recurso",
+      "recursos",
+      "registro",
+      "tem"
+    ]
+    
 
     return (
       <div {...props}>

@@ -1,6 +1,6 @@
 {
   "name": "react-highlight-exact-words",
-  "version": "0.16.1",
+  "version": "0.1.1",
   "description": "\nReact component to exactly highlight words in a larger body of text",
   "main": "dist/main.js",
   "scripts": {
